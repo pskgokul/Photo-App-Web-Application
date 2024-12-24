@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+/*
+grid template columns has autofit responsive feature
+*/
+
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +16,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      gridTemplateColumns: {
+        'gallery': 'repeat(auto-fit, minmax(250px, 1fr))'
+      }
     },
   },
   plugins: [],
